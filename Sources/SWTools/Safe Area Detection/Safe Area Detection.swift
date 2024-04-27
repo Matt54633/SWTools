@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 // Detect Safe Area Insets of Device
-extension UITabBarController {
+public extension UITabBarController {
     var height: CGFloat {
         return self.tabBar.frame.size.height
     }
@@ -20,7 +20,7 @@ extension UITabBarController {
 }
 
 
-extension UIApplication {
+public extension UIApplication {
     var keyWindow: UIWindow? {
         connectedScenes
             .compactMap {
@@ -36,21 +36,21 @@ extension UIApplication {
     
 }
 
-private struct SafeAreaInsetsKey: EnvironmentKey {
-    static var defaultValue: EdgeInsets {
+public struct SafeAreaInsetsKey: EnvironmentKey {
+    public static var defaultValue: EdgeInsets {
         UIApplication.shared.keyWindow?.safeAreaInsets.swiftUiInsets ?? EdgeInsets()
     }
 }
 
 
-private extension UIEdgeInsets {
+public extension UIEdgeInsets {
     var swiftUiInsets: EdgeInsets {
         EdgeInsets(top: top, leading: left, bottom: bottom, trailing: right)
     }
 }
 
 
-extension EnvironmentValues {
+public extension EnvironmentValues {
     var safeAreaInsets: EdgeInsets {
         self[SafeAreaInsetsKey.self]
     }

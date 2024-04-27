@@ -11,7 +11,7 @@ import CoreMotion
 
 // Detect a Shake Gestue on iOS Devices
 #if os(iOS)
-class ShakeDetector: ObservableObject {
+public class ShakeDetector: ObservableObject {
     private let motionManager = CMMotionManager()
     private let queue = OperationQueue()
     private let threshold: Double = 2.0
@@ -45,11 +45,11 @@ class ShakeDetector: ObservableObject {
     }
 }
 
-struct ShakeViewModifier: ViewModifier {
+public struct ShakeViewModifier: ViewModifier {
     @StateObject private var shakeDetector = ShakeDetector()
     let action: () -> Void
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .onReceive(shakeDetector.$didShake) { didShake in
                 if didShake {
@@ -66,7 +66,7 @@ struct ShakeViewModifier: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     func onShake(perform action: @escaping () -> Void) -> some View {
         self.modifier(ShakeViewModifier(action: action))
     }

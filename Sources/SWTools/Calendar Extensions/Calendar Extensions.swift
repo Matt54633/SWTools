@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Calendar {
+public extension Calendar {
     
     // Calculate number of days between 2 dates
     func numberOfDaysBetween(_ from: Date, and to: Date) -> Int {

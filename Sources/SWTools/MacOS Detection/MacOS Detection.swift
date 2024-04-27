@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 
 // Detect MacOS if running Mac(Designed for iPad) Destination
-struct IsOnMacKey: EnvironmentKey {
-    static let defaultValue: Bool = ProcessInfo.processInfo.isiOSAppOnMac
+public struct IsOnMacKey: EnvironmentKey {
+    public static let defaultValue: Bool = ProcessInfo.processInfo.isiOSAppOnMac
 }
 
-extension EnvironmentValues {
+public extension EnvironmentValues {
     var isOnMac: Bool {
         get { self[IsOnMacKey.self] }
         set { self[IsOnMacKey.self] = newValue }

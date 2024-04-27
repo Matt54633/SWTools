@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-extension UIColor {
+public extension UIColor {
     
     // Return the RGBA components of a Color
     var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
@@ -62,7 +62,6 @@ extension UIColor {
         let r = rgba.red
         let g = rgba.green
         let b = rgba.blue
-        let a = rgba.alpha
         
         let max = Swift.max(r, g, b)
         let min = Swift.min(r, g, b)
