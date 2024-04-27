@@ -30,7 +30,7 @@ To detect a shake gesture simply add the `.onShake` modifier a View:
 ```swift
 Rectangle()
     .onShake {
-    
+        // execute code
     }
 ```
 
