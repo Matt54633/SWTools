@@ -49,7 +49,7 @@ if isOnMac {
 
 To detect the safe area insets of a device, use the `safeAreaInsets` environment property:
 ```swift 
-@Environment(\.safeAreaInsets) var safeAreaInsers
+@Environment(\.safeAreaInsets) var safeAreaInsets
 
 if safeAreaInsets.bottom > 20 {
     // execute code
