@@ -26,7 +26,7 @@ import SWTools
 
 ### Shake Detection
 
-To detect a shake gesture simply add the `.onShake` modifier a View:
+To detect a shake gesture simply add the `.onShake` modifier to a View:
 ```swift
 Rectangle()
     .onShake {
