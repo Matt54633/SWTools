@@ -5,9 +5,7 @@
 <p align="center">
     <img src="https://img.shields.io/badge/iOS-17.0+-27ae60.svg" />
     <img src="https://img.shields.io/badge/macOS-14.0+-2980b9.svg" />
-    <a href="https://twitter.com/matt54633">
-        <img src="https://img.shields.io/badge/Contact-@matt54633-95a5a6.svg?style=flat" alt="Twitter: @matt54633" />
-    </a>
+    <img src="https://img.shields.io/badge/visionOS-1.0+-e67e22.svg" />
 </p>
 
 SWTools is versatile Swift Package for use with SwiftUI, allowing you to detect shake gestures and safe area insets, extend types and more!
