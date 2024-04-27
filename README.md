@@ -10,7 +10,7 @@
 
 SWTools is versatile Swift Package for use with SwiftUI, allowing you to detect shake gestures and safe area insets, extend types and more!
 
-This package is compatible with iOS and MacOS. 
+This package is compatible with iOS, MacOS and VisionOS. 
 
 ## Installation
 
