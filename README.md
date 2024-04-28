@@ -14,7 +14,7 @@ This package is compatible with iOS, MacOS and VisionOS.
 
 ## Installation
 
-SWTools uses Swift Package Manager, therefore add [https://github.com/matt54633/SWTools](https://github.com/matt54633/SWTools) as a package dependency to your project. 
+SWTools uses Swift Package Manager. Therefore, add [https://github.com/matt54633/SWTools](https://github.com/matt54633/SWTools) as a package dependency to your project. 
 
 Once installed, import SWTools where required using:
 
@@ -36,7 +36,7 @@ Rectangle()
 
 ### MacOS Detection
 
-If using the `MacOS(Designed for iPad)` destination, running specific code for MacOS can be challenging. To simply this process, use the `isOnMac` environment property:
+If using the `MacOS(Designed for iPad)` destination, running specific code for MacOS can be challenging. To simplify this process, use the `isOnMac` environment property:
 ```swift 
 @Environment(\.isOnMac) var isOnMac
 
@@ -58,4 +58,15 @@ if safeAreaInsets.bottom > 20 {
 
 ### Other Tools
 
-See the source code for other tool documentation!
+#### Calendar Extensions
+    - Number of Days Between Dates
+    
+#### Color Extensions
+    - Return RGBA Components
+    - Return HEX Code
+    - Return HSL Components
+    - Convert to Hex Code
+    - Convert to HSL
+
+
+See the source code for further information!

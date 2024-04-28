@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+#if os(iOS)
 // Detect Safe Area Insets of Device
 public extension UITabBarController {
     var height: CGFloat {
@@ -55,3 +56,4 @@ public extension EnvironmentValues {
         self[SafeAreaInsetsKey.self]
     }
 }
+#endif

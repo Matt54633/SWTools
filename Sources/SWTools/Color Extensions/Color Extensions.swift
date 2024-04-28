@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+#if os(iOS)
 public extension UIColor {
     
     // Return the RGBA components of a Color
@@ -92,3 +93,4 @@ public extension UIColor {
     }
     
 }
+#endif
