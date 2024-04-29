@@ -2,11 +2,15 @@
     <img src="SWTools Logo.svg" height="100">
 </p>
 
-<p align="center">
-    <img src="https://img.shields.io/badge/iOS-17.0+-27ae60.svg" />
-    <img src="https://img.shields.io/badge/macOS-14.0+-2980b9.svg" />
-    <img src="https://img.shields.io/badge/visionOS-1.0+-e67e22.svg" />
-</p>
+&nbsp;
+
+![](https://img.shields.io/badge/iOS-17.0+-27ae60.svg)
+![](https://img.shields.io/badge/macOS-14.0+-2980b9.svg)
+![](https://img.shields.io/badge/visionOS-1.0+-e67e22.svg)
+![](https://img.shields.io/badge/watchOS-10.0+-CC1EAC.svg)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FMatt54633%2FSWTools%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Matt54633/SWTools)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FMatt54633%2FSWTools%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/Matt54633/SWTools)
+
 
 SWTools is versatile Swift Package for use with SwiftUI, allowing you to detect shake gestures and safe area insets, extend types and more!
 
