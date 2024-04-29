@@ -45,6 +45,17 @@ if isOnMac {
 }
 ```
 
+### iPad Detection
+
+To detect if the current device in use is an iPad, use the `isOnIpad` environment property:
+```swift 
+@Environment(\.isOnIpad) var isOnIpad
+
+if isOnIpad {
+    // execute code
+}
+```
+
 ### Safe Area Detection
 
 To detect the safe area insets of a device, use the `safeAreaInsets` environment property:
