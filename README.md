@@ -28,16 +28,6 @@ import SWTools
 
 ## Usage
 
-### Shake Detection
-
-To detect a shake gesture simply add the `.onShake` modifier to a View:
-```swift
-Rectangle()
-    .onShake {
-        // execute code
-    }
-```
-
 ### MacOS Detection
 
 If using the `MacOS(Designed for iPad)` destination, running specific code for MacOS can be challenging. To simplify this process, use the `isOnMac` environment property:
@@ -69,6 +59,26 @@ To detect the safe area insets of a device, use the `safeAreaInsets` environment
 if safeAreaInsets.bottom > 20 {
     // execute code
 }
+```
+
+### Haptic Feedback
+
+To provide simple haptic feedback, use the hapticFeedback function:
+```swift
+Rectangle()
+    .onTapGesture {
+        hapticFeedback(.medium)
+    }
+```
+
+### Shake Detection
+
+To detect a shake gesture simply add the `.onShake` modifier to a View:
+```swift
+Rectangle()
+    .onShake {
+        // execute code
+    }
 ```
 
 ### Other Tools
