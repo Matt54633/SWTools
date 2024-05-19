@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-enum HapticFeedback {
+public enum HapticFeedback {
     case light, medium, heavy
 }
 
 #if os(iOS)
-func hapticFeedback(_ feedback: HapticFeedback) {
+public func hapticFeedback(_ feedback: HapticFeedback) {
     switch feedback {
     case .light:
         let generator = UIImpactFeedbackGenerator(style: .light)
